@@ -1,0 +1,35 @@
+<page-meta>
+  <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" />
+</page-meta>
+<view class="user">
+  <view class="left">
+    <image src="{{userImage}}" />
+  </view>
+  <view class="right">
+    <view class="l_top">
+      <view class="userName">{{userName}}</view>
+      <view class="vip">VIP{{Grade}}</view>
+    </view>
+    <view class="l_bottom">成长值:{{integral}}</view>
+  </view>
+</view>
+<view class="Navigation">
+  <navigator url="">兑换记录</navigator>
+  <navigator url="../logistics/logistics">我的物流</navigator>
+  <view bindtap="receivingAddress">收货地址</view>
+</view>
+<view class="goods">
+  <view class="title">精品好物</view>
+  <view class="main">
+    <view class="good" wx:for="{{goods}}" wx:key="*this">
+      <view class="img">
+        <image mode="widthFix" src="{{item}}" />
+      </view>
+        
+      <view class="exchange">
+        <text class="font">200积分</text>
+        <navigator url="../confirmExchange/confirmExchange?good={{item}}&userImage={{userImage}}&integral={{integral}}&consume={{200}}&userName={{userName}}" class="Confirm">立即兑换</navigator>
+      </view>
+    </view>
+  </view>
+</view>

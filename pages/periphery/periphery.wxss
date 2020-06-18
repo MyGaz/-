@@ -1,0 +1,164 @@
+.SurroundingAddress {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.SurroundingAddress .btn_address {
+  flex: 3;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  padding: 5px;
+}
+.SurroundingAddress view {
+  flex: 1;
+}
+.SurroundingAddress .periphery {
+  flex: 3;
+}
+.SurroundingAddress .periphery .choose-address {
+  border: 1px solid #000;
+}
+.SurroundingAddress .periphery input {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 5%;
+  font-size: 14px;
+}
+.screen {
+  display: flex;
+}
+.screen .left {
+  flex: 1;
+}
+.screen .left .select_box {
+  background: #fff;
+  width: 80%;
+  margin: 30rpx auto;
+  position: relative;
+}
+.screen .left .select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border: 1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.screen .left .select_text {
+  font-size: 30rpx;
+  flex: 1;
+}
+.screen .left .select_img {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+.screen .left .select_img_rotate {
+  transform: rotate(180deg);
+}
+.screen .left .option_box {
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+.screen .left .option {
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}
+.screen .right {
+  flex: 1;
+}
+.screen .right .select_box1 {
+  background: #fff;
+  width: 80%;
+  margin: 30rpx auto;
+  position: relative;
+}
+.screen .right .select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border: 1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.screen .right .select_text {
+  font-size: 30rpx;
+  flex: 1;
+}
+.screen .right .select_img {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+.screen .right .select_img_rotate {
+  transform: rotate(180deg);
+}
+.screen .right .option_box1 {
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+.screen .right .option {
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}
+.chooseAddress {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.chooseAddress .periphery_address {
+  width: 100%;
+  padding: 5px;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chooseAddress .periphery_address .name {
+  flex: 3;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.chooseAddress .periphery_address .distance {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,59 @@
+/* pages/case/case.wxss */
+page {
+  background-color: #ccc;
+  padding: 0;
+  margin: 0;
+}
+.case_total {
+  display: flex;
+  background-color: white;
+  padding: 5px 10px;
+}
+.case_total view {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+.case_main .case_swiper swiper {
+  width: 100%;
+  height: calc(100vw * 800 / 1152);
+}
+.case_main .case_swiper swiper .img {
+  width: 100%;
+  height: 100%;
+}
+.remind {
+  margin: auto;
+  margin-top: 20%;
+  text-align: center;
+  background-color: white;
+  width: 90%;
+  border: 1px grey solid;
+}
+.remind text {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.case_main .case_content {
+  width: 100%;
+  margin-top: 20px;
+  background-color: white;
+}
+.case_main .case_content .case_item {
+  display: flex;
+  border: solid 1px #ccc;
+}
+.case_main .case_content .case_item .left {
+  flex: 3;
+  padding-left: 5px;
+}
+.case_main .case_content .case_item .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.case_main .case_content .case_item .right .img {
+  width: 40px;
+}

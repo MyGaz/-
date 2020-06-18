@@ -1,0 +1,51 @@
+<page-meta>
+  <navigation-bar
+    title="{{nbTitle}}"
+    loading="{{nbLoading}}"
+    front-color="{{nbFrontColor}}"
+    background-color="{{nbBackgroundColor}}"
+    color-animation-duration="2000"
+    color-animation-timing-func="easeIn"
+  />
+</page-meta>
+<view>
+   <view class="case_total">
+      <view bindtap="ChooseImage">拍照</view>
+      <view><navigator url="../case/case">全部病例</navigator></view>
+      <view><navigator url="../add/add">手动添加</navigator></view>
+   </view>
+   <SerchInput></SerchInput>
+   <view class="case_main" wx:if="{{judge}}">
+      <block wx:if="{{images.length}}" class="case_swiper" >
+         <swiper autoplay="true" indicator-dots="true" indicator-color="#000000" indicator-active-color="#00CC00" interval="2000" circular="true">
+            <swiper-item wx:for="{{images}}" wx:key="*this">
+               <navigator>
+                  <image mode="widthFix" lass="img" bindtap="preview" data-src="{{item}}" mode="widthFix" src="{{item}}" />
+               </navigator>
+            </swiper-item>
+         </swiper>
+      </block>
+      <view class="case_content">
+         <!-- <navigator url="../details/details?case_id={{}}" class="case_item" wx:for="{{}}" wx:key=""> -->
+         <navigator wx:for="{{cases}}" wx:key="*this" url="../details/details" class="case_item">
+            <view class="left">
+               <view>
+                 {{item.time}}
+               </view>
+               <view>
+                 {{item.Department}}
+               </view>
+               <view>
+                  {{item.hospital}}
+               </view>
+            </view>
+            <view class="right">
+               <image class="img" mode="widthFix" src="../../icons/u347.svg" />
+            </view>
+         </navigator>
+      </view>
+   </view>
+   <view class="remind" wx:else>
+      <text>提醒:你还没有病例，可点击上方手动添加，或拍照添加</text>
+   </view>
+</view>

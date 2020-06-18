@@ -1,0 +1,36 @@
+<page-meta>
+  <navigation-bar
+    title="{{nbTitle}}"
+    loading="{{nbLoading}}"
+    front-color="{{nbFrontColor}}"
+    background-color="{{nbBackgroundColor}}"
+  />
+</page-meta>
+<view class="search_totle">
+    <input value="{{inputValue}}" placeholder="请输入要搜索的病例" type="text" bindinput="handBindInput"/>
+    <button class="btn" hidden="{{!isFocus}}" bindtap="clearSearchContent">
+        取消
+    </button>
+    <button class="btn" hidden="{{isFocus}}">
+        搜索
+    </button>
+</view>
+<!-- <view class="search_content" wx:if="{{case[0]}}" >
+    <navigator url="../details/details?case_id={{item.}}" wx:for="{{case}}" wx:key="case_id">
+       {{item.}}
+    </navigator> 
+</view> -->
+<view class="search_content" wx:if="{{!case[0]}}" >
+    <navigator url="../details/details">
+       我是假数据
+    </navigator> 
+    <navigator url="../details/details">
+       我懒得搜接口
+    </navigator> 
+    <navigator url="../details/details">
+       我没有假数据
+    </navigator> 
+    <navigator url="../details/details">
+       我不想动
+    </navigator> 
+</view>

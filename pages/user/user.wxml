@@ -1,0 +1,61 @@
+<page-meta>
+  <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" />
+</page-meta>
+<view class="user">
+  <view class="left">
+    <view wx:if="{{user.avatarUrl}}" class="image">
+      <image src="{{user.avatarUrl}}" />
+    </view>
+    <wiew wx:else>
+      <button open-type="getUserInfo" bindgetuserinfo="handGetUserInfo" class="btn" type="default" plain size="mini">
+        请登录
+      </button>
+    </wiew>
+  </view>
+  <view class="right">
+    <view class="r_left">
+      <view class="l_top">
+        <view class="userName">{{user.nickName}}</view>
+        <view class="vip">VIP{{Grade}}</view>
+      </view>
+      <view class="l_bottom">成长值:{{integral}}</view>
+    </view>
+    <view class="r_right">
+      <view class="r_top">
+        <view class="pointed"></view>
+        <view class="info">
+          消息
+          <view class='bubble'>
+            <view class='num'>3</view>
+          </view>
+        </view>
+      </view>
+      <view class="r_bottom">
+        <view class="record">你已签到{{Days}}天</view>
+        <view class="b_btn">
+          <button bindtap="Sign" type="default" plain size="mini">签到</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="UserAction">
+  <navigator url="../info/info?userName={{user.nickName}}" class="userInfo">
+    <view class="font">基本信息</view>
+    <view class="icon">
+      <image class="img" src="../../icons/右箭头.png" />
+    </view>
+  </navigator>
+  <navigator url="../appointment/appointment" class="appointment">
+    <view class="font">我的预约</view>
+    <view class="icon">
+      <image class="img" src="../../icons/右箭头.png" />
+    </view>
+  </navigator>
+  <navigator url="../exchange/exchange?userImage={{user.avatarUrl}}&userName={{user.nickName}}&Grade={{Grade}}&integral={{integral}}" class="exchange">
+    <view class="font">积分兑换</view>
+    <view class="icon">
+      <image class="img" src="../../icons/右箭头.png" />
+    </view>
+  </navigator>
+</view>

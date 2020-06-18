@@ -1,0 +1,53 @@
+page{
+    background-color: #cccccc;
+    padding: 10rpx;
+}
+.search_totle{
+    display: flex;
+    input{
+        flex:1;
+        height: 60rpx;
+        padding: 10rpx;
+        background-color: #ffffff;
+    }
+    .btn{
+        width: 100rpx;
+        font-size: 28rpx;
+        height: 80rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin:0 10rpx;
+    }
+}
+.chooseAddress{
+    display: flex;
+    flex-direction:column;
+    padding: 5px;
+    .periphery_address{
+      background-color: #fff;
+      width: 100%;
+      padding: 5px;
+      border-top: 1rpx solid #ccc;
+      border-bottom: 1rpx solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .name{
+        flex: 3;
+        display: -webkit-box ;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+      }
+      .distance{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+  }

@@ -1,0 +1,29 @@
+<page-meta>
+  <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" />
+</page-meta>
+<view class="user">
+  <view class="left">
+    <image src="{{userImage}}" />
+  </view>
+  <view class="right">
+    <view class="integral">当前积分:{{integral}}</view>
+    <view class="integral">商品消耗积分:{{consume}}</view>
+    <view class="integral">剩余积分:{{integral - consume >=0?integral - consume:'积分不足'}}</view>
+  </view>
+</view>
+<view class="address">
+  <radio-group class="confirmAddress">
+    <label class="checkbox" wx:for="{{address}}" wx:key="*this">
+      <radio bindtap="radio" data-address="{{item.provinceName}}{{item.cityName}}{{item.countyName}}{{item.detailInfo}}" class="radio" value="{{item.provinceName}}{{item.cityName}}{{item.countyName}}{{item.detailInfo}}" />
+      <view class="address">
+        <view wx:if="{{confirmationInfo===''?true:false}}" class="receivingAddress">
+          {{item.provinceName}}{{item.cityName}}{{item.countyName}}{{item.detailInfo}}
+        </view>
+        <view wx:else class="receivingAddress">{{confirmationInfo}}</view>
+        <view class="consignee">收货人： {{userName}}</view>
+      </view>
+    </label>
+  </radio-group>
+  <view bindtap="receivingAddress" class="configAddress">收获地址管理</view>
+</view>
+<button class="submit" type="default" plain="true" bindtap="submit">提交</button>

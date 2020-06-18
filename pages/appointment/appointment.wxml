@@ -1,0 +1,3 @@
+<page-meta>
+  <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" />
+</page-meta>

@@ -1,0 +1,85 @@
+/* pages/confirmExchange/confirmExchange.wxss */
+page{
+    background-color: #ccc;
+}
+.user {
+
+    width: 100%;
+    display: flex;
+    height: 150px;
+    background-color: #fff;
+    .left {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        image {
+            width: 100%;
+            height: 100%;
+            border: solid 8px #ccc;
+        }
+    }
+    .right {
+      flex: 3;
+        display: flex;
+        padding: 15px 5px;
+        justify-content: flex-start;
+        flex-direction: column;
+       view{
+           padding: 5px;
+       }
+    }
+  }
+  .address{
+      background-color: #fff;
+      margin-top: 10px;
+      .confirmAddress{
+          width: 100%;
+          
+        .checkbox{
+           display: flex;
+           .radio{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+           }
+            .address{
+                flex: 4;
+                padding-bottom: 5px;
+                .receivingAddress{
+                    padding: 5px 0;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: -webkit-box ;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-break: break-all;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+                .consignee{
+                    padding: 10px 0;
+                    border-bottom: 1px solid #ccc;
+                    
+                }
+            }
+        }
+    }
+    .configAddress{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+  }
+  .submit{
+      margin-top: 20px;
+    navigator{
+        color: rgb(136, 136, 252);
+
+    }
+  }

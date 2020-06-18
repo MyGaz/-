@@ -1,0 +1,128 @@
+/* pages/user/user.wxss */
+page {
+  background-color: #ccc;
+}
+.user {
+  width: 100%;
+  display: flex;
+  height: 150px;
+  background-color: #fff;
+}
+.user .left {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user .left .btn {
+  text-align: center;
+  font-size: 14px;
+}
+.user .left .image {
+  width: 80px;
+  height: 80px;
+  border: solid #ccc 5px;
+}
+.user .left .image image {
+  width: 100%;
+  height: 100%;
+}
+.user .right {
+  flex: 3;
+  display: flex;
+}
+.user .right .r_left {
+  flex: 1;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.user .right .r_left .l_top {
+  display: flex;
+  margin-bottom: 20px;
+}
+.user .right .r_left .l_top .userName {
+  flex: 1;
+  padding-top: 10px;
+}
+.user .right .r_left .l_top .vip {
+  flex: 1;
+}
+.user .right .r_left .l_bottom {
+  width: 100px;
+}
+.user .right .r_right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.user .right .r_right .r_top {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user .right .r_right .r_top .pointed {
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right-color: #ccc;
+}
+.user .right .r_right .r_top .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  font-size: 12px ;
+  height: 30px;
+  width: 100%;
+}
+.user .right .r_right .r_top .info .bubble {
+  background-color: #4074DD;
+  border-radius: 50rpx;
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  left: 10rpx;
+  bottom: 10rpx;
+}
+.user .right .r_right .r_top .info .bubble .num {
+  font-size: 24rpx;
+  color: #ffffff;
+  margin-left: 8rpx;
+  margin-top: -2rpx;
+}
+.user .right .r_right .r_bottom .record {
+  font-size: 12px;
+}
+.UserAction {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.UserAction navigator {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.UserAction navigator .font {
+  font-size: 20px;
+}
+.UserAction navigator .icon {
+  width: 35px;
+  height: 44px ;
+  padding-right: 10px;
+}
+.UserAction navigator .icon .img {
+  width: 100%;
+  height: 100%;
+}

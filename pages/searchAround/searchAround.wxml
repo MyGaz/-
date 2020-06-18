@@ -1,0 +1,25 @@
+<page-meta>
+  <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" />
+</page-meta>
+<view class="search_totle">
+    <input value="{{inputValue}}" placeholder="请输入要搜索的病例" type="text" bindinput="handBindInput"/>
+    <button class="btn" hidden="{{!isFocus}}" bindtap="clearSearchContent">
+        取消
+    </button>
+    <button class="btn" hidden="{{isFocus}}">
+        搜索
+    </button>
+</view>
+<view class="chooseAddress">
+  <navigator class="periphery_address" wx:for="{{markers}}" wx:key="*this">
+    
+    <view class="name">
+      {{item.title}}
+    </view>
+      <view class="distance">
+        {{item.distance}}米
+      </view>
+        
+ </navigator>
+    
+</view>

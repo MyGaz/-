@@ -1,0 +1,56 @@
+<page-meta>
+    <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" />
+</page-meta>
+<form bindsubmit="formSubmit">
+    <view class="userInfo">
+        <view class="name">
+            <view class="font">姓名</view>
+            <view class="input">
+                <input value="{{userName}}" bindinput="input" name="name1"></input>
+                <view wx:if="{{isFocus}}" bindtap="clear" class="clear">X</view>
+            </view>
+        </view>
+        <view class="phone">
+            <view class="font">手机号</view>
+            <view class="input">
+                <input name="phone"></input>
+            </view>
+        </view>
+        <view class="sex">
+            <view class="font">性别</view>
+            <view class="input">
+                <radio-group name="sex">
+                    <label>
+                        <radio value="女" />
+                        女
+                    </label>
+                    <label>
+                        <radio value="男" />
+                        男
+                    </label>
+                </radio-group>
+            </view>
+        </view>
+        <view class="email">
+            <view class="font">邮箱</view>
+            <view class="input">
+                <input name="email"></input>
+            </view>
+        </view>
+        <view class="birthDate">
+            <view class="font">出生日期</view>
+            <view class="input">
+                <input name="birthDate"></input>
+            </view>
+        </view>
+        <view class="number">
+            <view class="font">身份证号</view>
+            <view class="input">
+                <input name="number1"></input>
+            </view>
+        </view>
+    </view>
+    <button class="feedback_commit" formType="submit">
+        <button class="font">提交</button>
+    </button>
+</form>

@@ -1,0 +1,65 @@
+{
+  "pages":[
+    "pages/searchAround/searchAround",
+    "pages/logistics/logistics",
+    "pages/confirmExchange/confirmExchange",
+    "pages/info/info",
+    "pages/appointment/appointment",
+    "pages/exchange/exchange",
+    "pages/login/login",
+    "pages/details/details",
+    "pages/case/case",
+    "pages/add/add",
+    "pages/search/search", 
+    "pages/index/index",
+    "pages/helpCircle/helpCircle",
+    "pages/periphery/periphery",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#999999",
+    "navigationBarTitleText": "病例好医生",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#999999"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "position":"bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+      "pagePath": "pages/case/case",
+      "text": "病例",
+      "iconPath": "./icons/病例.png",
+      "selectedIconPath": "./icons/病例.png"
+    },
+      {
+      "pagePath":  "pages/periphery/periphery",
+      "text": "周边",
+      "iconPath": "./icons/周边.png",
+      "selectedIconPath": "./icons/周边.png"
+    },
+      {
+      "pagePath":"pages/helpCircle/helpCircle",
+      "text": "求助圈",
+      "iconPath": "./icons/求助.png",
+      "selectedIconPath": "./icons/求助.png"
+    },
+      {
+      "pagePath":  "pages/user/user",
+      "text": "我的",
+      "iconPath": "./icons/个人中心.png",
+      "selectedIconPath": "./icons/个人中心.png"
+    }
+  ]
+  },  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+    "desc": "小程序将获取您当前位置"
+    }
+    }
+}

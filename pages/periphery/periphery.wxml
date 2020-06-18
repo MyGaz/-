@@ -1,0 +1,61 @@
+<page-meta>
+  <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" />
+</page-meta>
+<view class="SurroundingAddress">
+  <view class="btn_address">
+    <button wx:if="{{!IsHidden}}" class="btn" type="primary" bindtap="addressAdd">获取位置</button>
+    <view class="myAddress" wx:else>
+      <view class="address">
+        {{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}
+      </view>
+    </view>
+  </view>
+  <view></view>
+  <view class="periphery">
+    <view class='address' bindtap='onChangeAddress'>
+      <button plain bindtap="onChangeAddress" size="mini">搜索周边</button>
+    </view>
+  </view>
+</view>
+<view class="screen">
+  <view class="left">
+    <view class='select_box'>
+      <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src=''></image>
+      </view>
+      <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+  </view>
+  <view class="right">
+    <view class='select_box1'>
+      <view class='select' catchtap='selectTap1'>
+        <text class='select_text'>{{selectData1[index1]}}</text>
+        <image class='select_img {{show1&&"select_img_rotate"}}' src=''></image>
+      </view>
+      <view class='option_box1' style='height:{{show1?(selectData1.length>5?300:selectData1.length*60):0}}rpx;'>
+        <text class='option' style='{{index1==selectData1.length-1&&"border:0;"}}' wx:for='{{selectData1}}' wx:key='this' data-index='{{index}}' catchtap='optionTap1'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="chooseAddress">
+  <navigator class="periphery_address" wx:for="{{chooseAddress}}" wx:key="*this">
+    
+    <view class="name">
+      {{item.address.name}}
+    </view>
+      <view class="distance">
+        {{item.distance}}米
+      </view>
+        
+ </navigator>
+    
+</view>
+  

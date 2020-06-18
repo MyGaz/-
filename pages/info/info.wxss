@@ -1,0 +1,116 @@
+page {
+  background-color: #ccc;
+}
+.userInfo .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.userInfo .name .font {
+  flex: 1;
+}
+.userInfo .name .input {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userInfo .name .input input {
+  flex: 3;
+}
+.userInfo .name .input .clear {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userInfo .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.userInfo .phone .font {
+  flex: 1;
+}
+.userInfo .phone .input {
+  flex: 3;
+}
+.userInfo .sex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.userInfo .sex .font {
+  flex: 1;
+}
+.userInfo .sex .input {
+  flex: 3;
+}
+.userInfo .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.userInfo .email .font {
+  flex: 1;
+}
+.userInfo .email .input {
+  flex: 3;
+}
+.userInfo .birthDate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.userInfo .birthDate .font {
+  flex: 1;
+}
+.userInfo .birthDate .input {
+  flex: 3;
+}
+.userInfo .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.userInfo .number .font {
+  flex: 1;
+}
+.userInfo .number .input {
+  flex: 3;
+}
+.feedback_commit {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border-radius: 10rpx;
+  background-color: #dedede;
+}
+.feedback_commit .font {
+  font-size: 40rpx;
+  height: 90rpx;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

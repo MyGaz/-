@@ -1,0 +1,39 @@
+<page-meta>
+    <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" />
+</page-meta>
+<view class="page">
+    <!-- 顶部导航栏 -->
+    <view class="swiper-tab">
+        <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+            代发货
+        </view>
+        <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+            待收货
+        </view>
+        <view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+            已收货
+        </view>
+    </view>
+    <!-- 内容主体 -->
+    <scroll-view class="scroll_view" scroll-y="true">
+        <swiper style="height:{{height}}px" class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+            <swiper-item>
+                <navigator url="../confirmExchange/confirmExchange?good={{item.good}}&confirmationInfo={{item.address}}&userImage={{item.userImage}}&integral={{item.integral}}&consume={{item.consume}}" class="goods" wx:for="{{goods}}" wx:key="*this">
+                    <view class="goodImg">
+                        <image class="img" src="{{item.good}}" mode="widthFix" />
+                    </view>
+                    <view class="goodInfo">
+                        <text class="font">我是商品</text>
+                        <view class="time">提交时间:{{item.time}}</view>
+                    </view>
+                </navigator>
+            </swiper-item>
+            <swiper-item>
+                <view>我是tab2</view>
+            </swiper-item>
+            <swiper-item>
+                <view>我是tab3</view>
+            </swiper-item>
+        </swiper>
+    </scroll-view>
+</view>

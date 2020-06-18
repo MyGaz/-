@@ -1,0 +1,50 @@
+page {
+  background: #dfdfdf;
+  height: 100%;
+}
+.page {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.swiper-tab {
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #777;
+  background-color: #fff;
+}
+.tab-item {
+  width: 33.3%;
+  text-align: center;
+  font-size: 15px;
+  color: #777;
+}
+.scroll_view {
+  height: calc(100vh - 80rpx);
+}
+.scroll_view .swiper swiper-item .goods {
+  display: flex;
+  background-color: #fff;
+  border: solid 1px #ccc;
+}
+.scroll_view .swiper swiper-item .goods .goodImg {
+  flex: 1;
+  padding-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll_view .swiper swiper-item .goods .goodImg .img {
+  width: 100%;
+  height: 100%;
+  border: solid 3px #ccc;
+}
+.scroll_view .swiper swiper-item .goods .goodInfo {
+  padding: 10px;
+  flex: 3;
+  font-size: 14px;
+}
+.on {
+  color: blue;
+  border-bottom: 5rpx solid blue;
+}

@@ -1,0 +1,95 @@
+<page-meta>
+  <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" />
+</page-meta>
+<form bindsubmit="formSubmit">
+  <view class="case_info">
+    <view class="info_tital">基本信息</view>
+    <view class="info_name">
+      <view class="name">
+        <text>姓名</text>
+        <input type="text" value="{{inputValue}}" bindinput="input" name="name1" placeholder="请输入姓名" />
+        <text class="clear" wx:if="{{isFocus}}" bindtap="clear">X</text>
+      </view>
+      <view>
+        <text>性别</text>
+        <radio-group name="sex" value="{{form.sex}}">
+          <label>
+            <radio value="女" />
+            女
+          </label>
+          <label>
+            <radio value="男" />
+            男
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="info_phone">
+      <text>手机号</text>
+      <input type="text" value="{{form.tel}}" name="tel" placeholder="请输入手机号" />
+    </view>
+    <view class="info_age">
+      <text>年龄</text>
+      <input type="text" value="{{form.age}}" name="age" placeholder="请输入年龄" />
+    </view>
+    <view class="info_time">
+      <text>就诊时间</text>
+      <input type="text" name="time" value="{{form.time}}" placeholder="请输入就诊时间" />
+    </view>
+    <view class="info_hospital">
+      <text>就诊医院</text>
+      <input type="text" name="hospital" value="{{form.hospital}}" placeholder="请输入就诊医院" />
+    </view>
+    <view class="info_Department">
+      <text>就诊科室</text>
+      <input type="text" name="Department" value="{{form.Department}}" placeholder="请输入就诊科室" />
+    </view>
+    <view class="info_doctor">
+      <view>
+        <text>就诊医生</text>
+        <input type="text" value="{{form.doctor}}" name="doctor" placeholder="请输入就诊医生" />
+      </view>
+      <view>
+        <text>门牌号</text>
+        <input type="text" value="{{form.houseNumber}}" name="houseNumber" placeholder="请输入门牌号" />
+      </view>
+    </view>
+    <view class="info_Inpatient">
+      <view>
+        <text>住院号</text>
+        <input type="text" placeholder="请输入住院号" />
+      </view>
+      <view>
+        <text>床位号</text>
+        <input type="text" placeholder="请输入床位号" />
+      </view>
+    </view>
+    <view class="info_Illness">
+      <view>
+        <text>病案号</text>
+        <input type="text" placeholder="请输入病案号" />
+      </view>
+      <view>
+        <text>基本病情</text>
+        <input type="text" placeholder="请输入基本病情" />
+      </view>
+      <view>
+        <text>备注</text>
+        <input type="text" placeholder="请输入备注" />
+      </view>
+    </view>
+    <view class="info_Photo">
+      <text>照片</text>
+      <view class="btn_UpImg">
+        <button bindtap="handChooseImage">+</button>
+        <view class="UpImg" wx:for="{{image}}" wx:key="*this" bindtap="clearImage" data-index="{{index}}">
+          <UpImg src="{{item}}" val="{{image}}"></UpImg>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="feedback_commit" formType="submit">
+    <icon type="success_no_circle" size="23" color="white" />
+    <button class="font">提交</button>
+  </button>
+</form>

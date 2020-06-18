@@ -1,0 +1,177 @@
+.case_info .info_tital {
+  background-color: #ccc;
+  font-size: 14px;
+  padding: 5px;
+}
+.case_info .info_name {
+  border: solid 1px black;
+}
+.case_info .info_name view {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 5px;
+}
+.case_info .info_name view text {
+  flex: 1;
+}
+.case_info .info_name view input {
+  flex: 4;
+}
+.case_info .info_name view .clear {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.case_info .info_name view radio-group {
+  flex: 4;
+}
+.case_info .info_phone {
+  border: solid 1px black;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 5px;
+}
+.case_info .info_phone text {
+  flex: 1;
+}
+.case_info .info_phone input {
+  flex: 4;
+}
+.case_info .info_age {
+  border: solid 1px black;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 5px;
+}
+.case_info .info_age text {
+  flex: 1;
+}
+.case_info .info_age input {
+  flex: 4;
+}
+.case_info .info_time {
+  border: solid 1px black;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 5px;
+}
+.case_info .info_time text {
+  flex: 1;
+}
+.case_info .info_time input {
+  flex: 3;
+}
+.case_info .info_hospital {
+  border: solid 1px black;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 5px;
+}
+.case_info .info_hospital text {
+  flex: 1;
+}
+.case_info .info_hospital input {
+  flex: 3;
+}
+.case_info .info_Department {
+  border: solid 1px black;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 5px;
+}
+.case_info .info_Department text {
+  flex: 1;
+}
+.case_info .info_Department input {
+  flex: 3;
+}
+.case_info .info_doctor {
+  border: solid 1px black;
+}
+.case_info .info_doctor view {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 5px;
+}
+.case_info .info_doctor view text {
+  flex: 1;
+}
+.case_info .info_doctor view input {
+  flex: 3;
+}
+.case_info .info_Inpatient {
+  border: solid 1px black;
+}
+.case_info .info_Inpatient view {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 5px;
+}
+.case_info .info_Inpatient view text {
+  flex: 1;
+}
+.case_info .info_Inpatient view input {
+  flex: 4;
+}
+.case_info .info_Illness {
+  border: solid 1px black;
+}
+.case_info .info_Illness view {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 5px;
+}
+.case_info .info_Illness view text {
+  flex: 1;
+}
+.case_info .info_Illness view input {
+  flex: 3;
+}
+.case_info .info_Photo .btn_UpImg {
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  flex-wrap: wrap;
+}
+.case_info .info_Photo .btn_UpImg button {
+  width: 90rpx;
+  height: 90rpx;
+  font-size: 60rpx;
+  background: #eeeeee;
+  color: #cccccc;
+  margin: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 20rpx;
+}
+.case_info .info_Photo .btn_UpImg .UpImg {
+  margin-left: 20rpx;
+}
+.feedback_commit {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border-radius: 10rpx;
+  background-color: #dedede;
+}
+.feedback_commit .font {
+  font-size: 40rpx;
+  height: 90rpx;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
